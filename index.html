@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Correia Quintella – Cidadania</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ══════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">
+    <span>Correia Quintella</span>
+    <span class=" text-decoration-none">Assessoria & Consultoria de Cidadanias</span>
+    
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#cidadania">Cidadania</a></li>
+    <li><a href="login.php">Acompanhamento de Solicitação</a></li>
+    <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"          onclick="closeMobile()">Home</a>
+  <a href="#cidadania"     onclick="closeMobile()">Cidadanias</a>
+  <a href="login.php" onclick="closeMobile()">Acompanhamento</a>
+  <a href="#contato"       onclick="closeMobile()">Fale Conosco</a>
+</div>
+
+
+<!-- ═══ HERO / SECTION 1 ════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <!-- green card panel -->
+  <div class="hero-panel">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Assessoria especializada · Desde 2010</p>
+
+      <p class="hero-title">Descubra sua</p>
+      <h1 class="hero-title-main">Cidadania</h1>
+
+      <div class="hero-divider"></div>
+
+      <p class="hero-subtitle">
+        Pesquisa genealógica no Brasil e no exterior.<br>
+        Reconhecemos seu direito à cidadania italiana, portuguesa, espanhola, alemã, austríaca, tcheca, suíça, polonesa e francesa.
+      </p>
+
+      <div class="hero-flags">
+        <div class="flag-chip">🇮🇹 Italiana</div>
+        <div class="flag-chip">🇵🇹 Portuguesa</div>
+        <div class="flag-chip">🇪🇸 Espanhola</div>
+        <div class="flag-chip">🇩🇪 Alemã</div>
+        <div class="flag-chip">🇦🇹 Austríaca</div>
+        <div class="flag-chip">🇨🇿 Tcheca</div>
+        <div class="flag-chip">🇨🇭 Suíça</div>
+        <div class="flag-chip">🇵🇱 Polonesa</div>
+        <div class="flag-chip">🇫🇷 Francesa</div>
+      </div>
+
+   
+    </div>
+
+    <!-- Brand mark bottom-left -->
+    <div class="hero-logo-block">
+      <div class="hero-arch">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="logo-name">Correia Quintella</div>
+      <div class="logo-tag">Assessoria & Consultoria de Cidadanias</div>
+    </div>
+  </div>
+
+  <!-- Generic Passport SVG (neutral green/gold — no country-specific branding) -->
+  <svg class="hero-passport" viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#3a6b44"/>
+        <stop offset="100%" stop-color="#2a4f33"/>
+      </linearGradient>
+      <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#1e3825"/>
+        <stop offset="100%" stop-color="#3a6b44"/>
+      </linearGradient>
+      <filter id="pshadow">
+        <feDropShadow dx="6" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+      </filter>
+    </defs>
+    <!-- Book body -->
+    <rect x="20" y="10" width="178" height="278" rx="8" fill="url(#pg)" filter="url(#pshadow)"/>
+    <!-- Spine -->
+    <rect x="20" y="10" width="18" height="278" rx="8" fill="url(#spine)"/>
+    <!-- Top label -->
+    <text x="110" y="60" text-anchor="middle" font-family="serif" font-size="9.5" fill="#e8c97a" letter-spacing="2">ASSESSORIA</text>
+    <text x="110" y="76" text-anchor="middle" font-family="serif" font-size="9" fill="#e8c97a" letter-spacing="1.5">CORREIA QUINTELLA</text>
+    <!-- Decorative circle emblem -->
+    <circle cx="110" cy="145" r="42" fill="none" stroke="#e8c97a" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="110" cy="145" r="34" fill="none" stroke="#e8c97a" stroke-width="0.6" opacity="0.4"/>
+    <!-- Star / compass rose center -->
+    <g transform="translate(110,145)">
+      <polygon points="0,-22 2.6,-7 8,-8 3.5,-1 6.8,8 0,3 -6.8,8 -3.5,-1 -8,-8 -2.6,-7" fill="#e8c97a" opacity="0.85"/>
+    </g>
+    <!-- Decorative branches -->
+    <path d="M78 155 Q70 140 75 130 Q80 125 82 132 Q79 138 84 150" stroke="#e8c97a" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M142 155 Q150 140 145 130 Q140 125 138 132 Q141 138 136 150" stroke="#e8c97a" stroke-width="1" fill="none" opacity="0.5"/>
+    <!-- Cog wheel bottom of emblem -->
+    <circle cx="110" cy="162" r="9" fill="none" stroke="#e8c97a" stroke-width="1" opacity="0.5"/>
+    <!-- PASSAPORTE text -->
+    <text x="110" y="228" text-anchor="middle" font-family="serif" font-size="13" fill="#e8c97a" letter-spacing="3.5">PASSAPORTE</text>
+    <!-- NFC chip icon -->
+    <rect x="101" y="240" width="18" height="12" rx="2" fill="none" stroke="#e8c97a" stroke-width="0.8" opacity="0.45"/>
+    <path d="M105 246 Q110 242 115 246 Q110 250 105 246" fill="#e8c97a" opacity="0.3"/>
+    <!-- Page edge lines -->
+    <rect x="192" y="30" width="3" height="240" rx="1" fill="#4e8a5a" opacity="0.5"/>
+    <rect x="196" y="40" width="2" height="220" rx="1" fill="#5a9a6a" opacity="0.35"/>
+  </svg>
+</section>
+
+
+<!-- ═══ STATS BAR ═══════════════════════════════════════════ -->
+<div class="stats-bar" id="cidadania">
+  <div class="stat-item">
+    <div class="stat-num">2.800+</div>
+    <div class="stat-label">Cidadanias reconhecidas</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">15+</div>
+    <div class="stat-label">Anos de experiência</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">9</div>
+    <div class="stat-label">Países europeus</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">98%</div>
+    <div class="stat-label">Taxa de aprovação</div>
+  </div>
+</div>
+
+
+<!-- ═══ CIDADANIAS ══════════════════════════════════════════ -->
+<section class="citizenships-section" id="cidadania">
+
+  <div class="citizenships-header">
+    <p class="citizenships-eyebrow">Assessoria Especializada</p>
+    <h2 class="citizenships-title">Cidadanias Europeias</h2>
+    <p class="citizenships-subtitle">
+      Reconhecemos seu direito à cidadania europeia com suporte completo
+      em todas as etapas — da pesquisa genealógica à entrega do passaporte.
+    </p>
+  </div>
+
+  <div class="citizenships-grid">
+
+    <!-- ── ITALIANA ── -->
+    <a class="citizenship-card" href="cidadania-italiana.html">
+      <div class="cc-flag">🇮🇹</div>
+      <div class="cc-body">
+        <div class="cc-country">Italiana</div>
+        <div class="cc-tagline">Via judicial ou consular</div>
+        <ul class="cc-tags">
+          <li>Direito do sangue</li>
+          <li>Sem limite de gerações</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── PORTUGUESA ── -->
+    <a class="citizenship-card" href="cidadania-portuguesa.html">
+      <div class="cc-flag">🇵🇹</div>
+      <div class="cc-body">
+        <div class="cc-country">Portuguesa</div>
+        <div class="cc-tagline">Por descendência ou naturalização</div>
+        <ul class="cc-tags">
+          <li>Netos de portugueses</li>
+          <li>Acesso à UE e CPLP</li>
+          <li>Processo consular</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── ESPANHOLA ── -->
+    <a class="citizenship-card" href="cidadania-espanhola.html">
+      <div class="cc-flag">🇪🇸</div>
+      <div class="cc-body">
+        <div class="cc-country">Espanhola</div>
+        <div class="cc-tagline">Lei da Memória Democrática</div>
+        <ul class="cc-tags">
+          <li>Netos de espanhóis</li>
+          <li>Lei 20/2022</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── ALEMÃ ── -->
+    <a class="citizenship-card" href="cidadania-alema.html">
+      <div class="cc-flag">🇩🇪</div>
+      <div class="cc-body">
+        <div class="cc-country">Alemã</div>
+        <div class="cc-tagline">Por descendência ou Art. 116</div>
+        <ul class="cc-tags">
+          <li>Descendentes de alemães</li>
+          <li>Perseguição nazista</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── AUSTRÍACA ── -->
+    <a class="citizenship-card" href="cidadania-austriaca.html">
+      <div class="cc-flag">🇦🇹</div>
+      <div class="cc-body">
+        <div class="cc-country">Austríaca</div>
+        <div class="cc-tagline">Descendência ou restituição nazista</div>
+        <ul class="cc-tags">
+          <li>Jus sanguinis</li>
+          <li>Vítimas do nazismo</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── TCHECA ── -->
+    <a class="citizenship-card" href="cidadania-tcheca.html">
+      <div class="cc-flag">🇨🇿</div>
+      <div class="cc-body">
+        <div class="cc-country">Tcheca</div>
+        <div class="cc-tagline">Por descendência ou naturalização</div>
+        <ul class="cc-tags">
+          <li>Descendentes de tchecos</li>
+          <li>Residência legal</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── SUÍÇA ── -->
+    <a class="citizenship-card" href="cidadania-suica.html">
+      <div class="cc-flag">🇨🇭</div>
+      <div class="cc-body">
+        <div class="cc-country">Suíça</div>
+        <div class="cc-tagline">Por descendência ou naturalização</div>
+        <ul class="cc-tags">
+          <li>Filhos de suíços</li>
+          <li>Recuperação da nacionalidade</li>
+          <li>Um dos melhores passaportes</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── POLONESA ── -->
+    <a class="citizenship-card" href="cidadania-polonesa.html">
+      <div class="cc-flag">🇵🇱</div>
+      <div class="cc-body">
+        <div class="cc-country">Polonesa</div>
+        <div class="cc-tagline">Jus sanguinis sem limite de gerações</div>
+        <ul class="cc-tags">
+          <li>Descendentes de poloneses</li>
+          <li>Sem limite de gerações</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+    <!-- ── FRANCESA ── -->
+    <a class="citizenship-card" href="cidadania-francesa.html">
+      <div class="cc-flag">🇫🇷</div>
+      <div class="cc-body">
+        <div class="cc-country">Francesa</div>
+        <div class="cc-tagline">Por descendência ou naturalização</div>
+        <ul class="cc-tags">
+          <li>Filhos de franceses</li>
+          <li>Casamento e residência</li>
+          <li>Passaporte UE</li>
+        </ul>
+      </div>
+      <div class="cc-arrow">→</div>
+    </a>
+
+  </div>
+
+  <!-- Serviços de suporte -->
+  <div class="support-services">
+    <p class="support-title">Serviços de Apoio</p>
+    <div class="support-grid">
+      <div class="support-item"><span>📜</span> Pesquisa Genealógica</div>
+      <div class="support-item"><span>🗂️</span> Montagem de Pasta</div>
+      <div class="support-item"><span>✍️</span> Apostilamento</div>
+      <div class="support-item"><span>🌍</span> Tradução Juramentada</div>
+      <div class="support-item"><span>⚖️</span> Retificação de Documentos</div>
+      <div class="support-item"><span>🏛️</span> Agendamentos Consulares</div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="team-section" id="equipe">
+
+  <div class="team-container">
+
+    <div class="team-image">
+      <img src="NarayanaCorreia.jfif" alt="Narayana Correia Quintella">
+    </div>
+
+    <div class="team-content">
+
+      <p class="team-eyebrow">Fundadora & CEO</p>
+
+      <h2 class="team-name">
+        Narayana Correia Quintella
+      </h2>
+
+      <p class="team-description">
+        Especialista em assessoria de cidadania europeia,
+        Narayana Correia Quintella atua oferecendo suporte
+        estratégico e acompanhamento personalizado em
+        processos de reconhecimento de cidadania italiana,
+        portuguesa e espanhola.
+      </p>
+
+      <p class="team-description">
+        Com atendimento humanizado e foco em excelência,
+        lidera a Correia Quintella com compromisso,
+        transparência e segurança jurídica em todas as etapas
+        do processo.
+      </p>
+
+      <ul class="team-list">
+        <li>✔ Atendimento personalizado</li>
+        <li>✔ Especialista em cidadania europeia</li>
+        <li>✔ Suporte documental completo</li>
+        <li>✔ Acompanhamento estratégico</li>
+        <li>✔ Atendimento nacional e internacional</li>
+      </ul>
+
+      <a href="#contato" class="team-btn">
+        Agendar Consulta
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Placeholder section -->
+<section style="min-height:60vh; background:var(--cream); display:flex; align-items:center; justify-content:center;" id="acompanhamento">
+  <p style="font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--text-mid); letter-spacing:0.06em; opacity:0.5;">[ Conteúdo das seções em desenvolvimento ]</p>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer id="contato">
+  <div class="footer-grid">
+    <!-- Brand column -->
+    <div class="footer-brand">
+      <div class="brand-name">Correia Quintella</div>
+      <div class="brand-sub">Assessoria & Consultoria de Cidadanias</div>
+      <p>Ajudamos brasileiros a descobrir e reconhecer sua herança europeia, com rigor jurídico e pesquisa genealógica especializada.</p>
+      <div class="footer-flags">🇧🇷 🇵🇹 🇮🇹 🇪🇸 🇩🇪 🇦🇹 🇨🇿 🇨🇭 🇵🇱 🇫🇷</div>
+    </div>
+
+    <!-- Serviços -->
+    <div class="footer-col">
+      <h4>Cidadanias</h4>
+      <ul>
+        <li><a href="cidadania-italiana.html">Cidadania Italiana</a></li>
+        <li><a href="cidadania-portuguesa.html">Cidadania Portuguesa</a></li>
+        <li><a href="cidadania-espanhola.html">Cidadania Espanhola</a></li>
+        <li><a href="cidadania-alema.html">Cidadania Alemã</a></li>
+        <li><a href="cidadania-austriaca.html">Cidadania Austríaca</a></li>
+        <li><a href="cidadania-tcheca.html">Cidadania Tcheca</a></li>
+        <li><a href="cidadania-suica.html">Cidadania Suíça</a></li>
+        <li><a href="cidadania-polonesa.html">Cidadania Polonesa</a></li>
+        <li><a href="cidadania-francesa.html">Cidadania Francesa</a></li>
+        <li><a href="#">Pesquisa Genealógica</a></li>
+      </ul>
+    </div>
+
+    <!-- Empresa -->
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Nossa equipe</a></li>
+        <li><a href="#">Depoimentos</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Parceiros</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">E-mail</a></li>
+        <li><a href="#">Agendar consulta</a></li>
+        <li><a href="#">Acompanhar processo</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Correia Quintella Assessoria & Consultoria de Cidadanias. Todos os direitos reservados.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+  </div>
+
+  <div class="footer-gold-line"></div>
+</footer>
+
+
+<!-- ═══ WHATSAPP FLOAT ══════════════════════════════════════ -->
+<a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+  <div class="wa-icon">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </div>
+  <span class="wa-label">Fale pelo WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
